@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+    <h3>Regisrer
+    </h3>
+    <form action="checkregister.php" method=POST style="width: fit-content; height: auto; border: solid 1px; padding: 10px;">
+        <div style="display: flex; gap: 10px">
+            <div>
+                 <p>Full Name </p>
+                 <input type="text" name="user">
+            </div>
+            <div>
+                <p>User name</p>
+                <input type="text">
+            </div>
+        </div>
+        <div style="display: flex; gap: 10px">
+            <div>
+                 <p>Email </p>
+                 <input type="text" name="email">
+            </div>
+            <div>
+                <p>Phone number</p>
+                <input type="text">
+            </div>
+        </div>
+        <div style="display: flex; gap: 10px">
+            <div>
+                 <p>Password </p>
+                 <input type="text" name="password">
+            </div>
+            <div>
+                <p>Confirm password</p>
+                <input type="text" name="confirmpassword">
+            </div>
+        </div>
+        <div style="display: flex; align-items: center; justify-content: start; gap:20px">
+            <input type="radio" name="gender">Nam
+            <input type="radio" name="gender">Nu
+            <input type="radio" name="gender">LGBT
+        </div>
+        <div>
+            <button type="submit" style="width: 100%;">Register</button>
+        </div>
+    </form>
+</body>
+</html>
