@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dieu tra thong tin</title>
+</head>
+
+<body>
+    <h3>Phieu dieu tra thong tin</h3>
+    <form action="check.php" method=POST>
+        <div style="display: flex; width: 50%;height: 20px ; align-items: center;">
+            <p>Ho Ten: </p>
+            <input type="text" name="user">
+        </div>
+        <div style="display: flex; align-items: center;">
+            <p>Gioi Tinh: </p>
+            <input type="radio" name="gender" value="Nam">Nam
+            <input type="radio" name="gender" value="Nu">Nu
+        </div>
+        <div style="display: flex;height: 20px ; align-items: center;">
+            <p>Dia chi: </p>
+            <input type="text" name="address" style="width: 300px;">
+        </div>
+        <div style="display: flex;height: 20px ; align-items: center;padding-top: 10px;">
+            <p>Email: </p>
+            <input type="email" name="email" style="width: 300px;">
+        </div>
+        <div style="display: flex; align-items: center;">
+            <p>Do tuoi:</p>
+            <select name="age">
+                <option value="0-29">Duoi 30 tuoi</option>
+                <option value="30-40">Tu 30-40</option>
+                <option value="40-50">Tu 40-50</option>
+                <option value="0-17">Duoi 18</option>
+            </select>
+        </div>
+        <div>
+            <label for="like">So Thich</label>
+            <input type="checkbox" name="like[]" value="bongda">
+            <label for="like1">Bong Da</label>
+            <input type="checkbox" name="like[]" value="game">
+            <label for="like2">Game</label>
+            <input type="checkbox" name="like[]" value="boiloi">
+            <label for="like3">Boi Loi</label>
+            <input type="checkbox" name="like[]" value="shopping">
+            <label for="like4">Shopping</label>
+        </div>
+        <div>
+            <input type="submit">
+            <input type="reset" name="text" value="Clear">
+        </div>
+    </form>
+</body>
+
+</html>
